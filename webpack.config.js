@@ -29,6 +29,7 @@ const webpackConfig = {
         path: path.resolve(WEB_ROOT, DEST_DIR),
         filename: `${isDev ? '[name]' : '[name].[chunkhash]'}.js`,
         publicPath: '/assets/',
+        libraryTarget: 'umd',
     },
     module: {
         loaders: [{
